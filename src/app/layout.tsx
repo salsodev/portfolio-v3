@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/global/Header";
 import Profile from "@/components/Profile";
 import RecentBlog from "@/components/RecentBlog";
+import TimeTravelControl from "@/components/TimeTravelControl";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#1e293b]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#1e293b] overflow-auto`}
       >
         <Header />
         <div className="grid sm:grid-cols-1 md:grid-cols-[300px_1fr] sm:gap-10 gap-5 h-dvh text-slate-300 sm:pt-10 pt-6 sm:px-10 px-5">
@@ -42,6 +43,7 @@ export default function RootLayout({
             <RecentBlog />
           </main>
         </div>
+        <TimeTravelControl />
       </body>
     </html>
   );
