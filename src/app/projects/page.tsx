@@ -70,7 +70,7 @@ function MyProjects() {
           Relevant Projects
         </h2>
         <p className="text-xs text-slate-500 mt-3">
-          Things I've made trying to put my dent in the universe.
+          Things I&apos;ve made trying to put my dent in the universe.
         </p>
       </header>
 

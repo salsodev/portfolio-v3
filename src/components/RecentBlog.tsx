@@ -45,7 +45,7 @@ async function RecentBlogs() {
           Recent Blogs
         </h2>
         <p className="text-xs text-slate-500 mt-3">
-          Let's catch you up on the latest.
+          Let&apos;s catch you up on the latest.
         </p>
 
         <div className="mt-7">
@@ -80,7 +80,7 @@ async function RecentBlogs() {
           Connect with me
         </h2>
         <p className="text-slate-400 text-sm mt-2">
-          Let's start something beautiful
+          Let&apos;s start something beautiful
         </p>
 
         <div className="flex gap-10 items-center justify-center mt-10">

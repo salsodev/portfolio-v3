@@ -1,6 +1,6 @@
 "use client";
 
-import { GitMerge, Home, Phone, SmartphoneNfc, UserSearch } from "lucide-react";
+import { GitMerge, Home, Phone, UserSearch } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

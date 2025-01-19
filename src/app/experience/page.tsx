@@ -17,7 +17,7 @@ const experiences = [
       },
     ],
     description:
-      "Nowadays, it's not about making things work but more about knowing how things are connected and apply that when you are most in need",
+      "Nowadays, it&apos;s not about making things work but more about knowing how things are connected and apply that when you are most in need",
     technologies: ["React", "shadCN", "React-Query"],
   },
   {
@@ -28,7 +28,7 @@ const experiences = [
     currentRole: ["Frontend Engineer"],
     prevRole: [],
     description:
-      "Nowadays, it's not about making things work but more about knowing how things are connected and apply that when you are most in need",
+      "Nowadays, it&apos;s not about making things work but more about knowing how things are connected and apply that when you are most in need",
     technologies: ["Nextjs", "shadCN", "React-Query"],
   },
 ];

@@ -1,13 +1,4 @@
-import {
-  ArrowUpRight,
-  Briefcase,
-  BriefcaseBusiness,
-  DownloadCloud,
-  ExternalLink,
-  FileText,
-  Flame,
-  Telescope,
-} from "lucide-react";
+import { ArrowUpRight, FileText, Flame } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
