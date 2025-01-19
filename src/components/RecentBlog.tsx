@@ -31,12 +31,19 @@ interface articleDTO {
 }
 
 async function RecentBlogs() {
-  const data: any = await client.request(query);
+  let articles = [];
+  let err = "";
 
-  // const numOfBlogs = data?.publication?.posts?.totalDocuments;
-  const articles = data?.publication?.posts?.edges?.map((blog: any) => ({
-    ...blog.node,
-  }));
+  try {
+    const data: any = await client.request(query);
+
+    // const numOfBlogs = data?.publication?.posts?.totalDocuments;
+    articles = data?.publication?.posts?.edges?.map((blog: any) => ({
+      ...blog.node,
+    }));
+  } catch (error: any) {
+    err = error.message;
+  }
 
   return (
     <aside className="flex flex-col sm:gap-6 gap-5">
@@ -49,6 +56,7 @@ async function RecentBlogs() {
         </p>
 
         <div className="mt-7">
+          {err && <p className="text-slate-400 text-sm">{err}</p>}
           <article className="flex flex-col group/article">
             {articles.map((blog: articleDTO) => (
               <Link

@@ -29,7 +29,7 @@ function ContactMe() {
 
       <div>
         <form className="flex flex-col gap-6">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center flex-wrap gap-4">
             <div className="flex flex-col gap-2 grow">
               <label htmlFor="Fname" className="text-slate-300 text-sm">
                 First name:
